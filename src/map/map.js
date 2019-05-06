@@ -1,7 +1,7 @@
 import api from '../services/api.js';
 
 //refernce needed Dom elements
-const character = document.getElemtnById('character');
+const character = document.getElementById('character');
 const powerUps = document.getElementById('power-ups');
 const lives = document.getElementById('lives');
 const coins = document.getElementById('coins');
@@ -19,3 +19,5 @@ character.textContent = user.character;
 powerUps.textContent = user.powerUps;
 lives.textContent = user.lives;
 coins.textContent = user.coins;
+
+console.log(user.character);
