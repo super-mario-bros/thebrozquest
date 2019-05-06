@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/home/index.css">
     <title>Broz Quest</title>
 </head>
 <body>
-    
+    <header>
+    <h1>Help Rescue Toad</h1>
+    </header>
+    <main>
+        <form id="userSignUp">
+            <fieldset>
+                <legend>Choose your hero!</legend>
+                <p id="character-choice">
+                    <label>
+                        Mario
+                        <input type="radio" name="character" value="mario" required>
+                        <img>
+                    </label>
+                    <label>
+                        Luigi
+                        <input type="radio" name="character" value="luigi" required>
+                        <img>
+                    </label>
+                    <label>
+                        Princess
+                        <input type="radio" name="character" value="princess" required>
+                        <img>
+                    </label>
+                    <label>
+                        Yoshi
+                        <input type="radio" name="character" value="yoshi" required>
+                        <img>
+                    </label>
+                </p>
+
+                <label for="power-ups">Power Ups</label>
+                <select name="power-ups" id="power-ups">
+                    <option value="" hidden disabled selected>Select your power up!</option>
+                    <option value="fire-ball">Fire Balls</option>
+                    <option value="p-wings">P-Wings</option>
+                    <option value="super-star">Super Star</option>
+                </select>
+            </fieldset>
+            <button>Start Your Adventure!</button>
+        </form>
+    </main>
+
+            
+
 </body>
 </html>
