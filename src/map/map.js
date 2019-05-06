@@ -5,6 +5,7 @@ const character = document.getElementById('character');
 const powerUps = document.getElementById('power-ups');
 const lives = document.getElementById('lives');
 const coins = document.getElementById('coins');
+const avatar = document.getElementById('avatar');
 
 //initialize profile with user
 const user = api.getUser();
