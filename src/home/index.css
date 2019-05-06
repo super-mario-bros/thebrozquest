@@ -1,9 +1,14 @@
 body {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     background-image: url('../../assets/background.png');
     background-repeat: no-repeat;
     background-size: 100%100vh 
+}
+header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 fieldset {
     border: 6px solid  yellow; 
@@ -14,3 +19,4 @@ button {
     margin-top: 20px;
     margin-left: 40px;
 }
+
