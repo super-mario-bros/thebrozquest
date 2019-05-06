@@ -16,8 +16,7 @@ if(!user) {
 
 //populate the profile
 character.textContent = user.character;
+avatar.src = '../assets/avatars/' + user.character + 'Small.png';
 powerUps.textContent = user.powerUps;
 lives.textContent = user.lives;
 coins.textContent = user.coins;
-
-console.log(user.character);
