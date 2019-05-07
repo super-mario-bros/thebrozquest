@@ -14,7 +14,6 @@ const api = {
         const user = JSON.parse(json);
         return user;
     },
-   
     getQuests() {
         return questData;
     }, 
