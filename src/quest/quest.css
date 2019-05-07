@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+fieldset{
+    display: grid;
+}
+button{
+    text-align: center;
+    margin-top: 10px;
+}

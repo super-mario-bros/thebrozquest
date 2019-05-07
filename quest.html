@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/quest/quest.css">
     <title>Quest</title>
 </head>
 <body>
@@ -19,27 +20,29 @@
     </header>
 
     <main>
-        <h2 id="title">fill</h2>
         <p>
-            <img src="./assets/cloudworld.jpg" alt="cloud world">
+            <img id="cloudWorld" src="./assets/cloudworld.jpg" alt="cloud world">
+        </p>
+        <p id="description">
+            Description here
         </p>
         <form id="choice-form">
             <fieldset>
                 <label>
-                    Choice 1
                     <input type="radio" name="choice" value="choice1">
+                    Choice 1
                 </label>
                 <label>
-                    Choice 2
                     <input type="radio" name="choice" value="choice2">
+                    Choice 2
                 </label>
                 <label>
-                    Choice 3
                     <input type="radio" name="choice" value="choice3">
+                    Choice 3
                 </label>
                 <h3>Pick a choice</h3>
-            <button>Submit</button>
             </fieldset>
+            <button>Submit</button>
         </form>
 
         <section id="result" class="hidden">
