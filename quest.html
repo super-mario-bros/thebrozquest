@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quest</title>
+</head>
+<body>
+    <header>
+        <h1>Cloud World</h1>
+        <div class="profile">
+            <img id="avatar">
+            Character: <span id="character"></span>
+            Lives: <span id="lives"></span>
+            Power Ups: <span id="power-ups"></span>
+            Coins: <span id="coins"></span>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="title">fill</h2>
+        <p>
+            <img src="./assets/cloudworld.jpg" alt="cloud world">
+        </p>
+        <form id="choice-form">
+            <fieldset>
+                <label>
+                    Choice 1
+                    <input type="radio" name="choice" value="choice1">
+                </label>
+                <label>
+                    Choice 2
+                    <input type="radio" name="choice" value="choice2">
+                </label>
+                <label>
+                    Choice 3
+                    <input type="radio" name="choice" value="choice3">
+                </label>
+                <h3>Pick a choice</h3>
+            <button>Submit</button>
+            </fieldset>
+        </form>
+
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="map.html">Back to Map</a>
+        </section>
+    </main>
+    <script type="module" src="src/quest/quest.js"></script>
+</body>
+</html>
