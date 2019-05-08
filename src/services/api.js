@@ -17,9 +17,16 @@ const api = {
     getQuests() {
         return questData;
     }, 
-    // getQuest(id) {
-    //     return findById(questData, id);
-    // }
+    getQuest(id) {
+        const quests = api.getQuests();
+        for(let i = 0; i < quests.length; i++) {
+            const questId = quests[i].id;
+            if(questId === id) {
+                return quests[i];
+            }
+        }
+        // return findById(questData, id);
+    }
 };
 
 export default api;
