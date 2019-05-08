@@ -1,6 +1,7 @@
 import api from '../services/api.js';
 import createChoice from '../quest/create-choice.js';
 import loadProfile from '../load-profile.js';
+import scoreQuest from './score-quest.js';
 
 loadProfile();
 
@@ -42,10 +43,13 @@ choiceForm.addEventListener('submit', function(event) {
         const choice = quest.choices[i];
         if(choice.id === choiceId){
             resultDescription.textContent = choice.result;
-            console.log(choice);
-            // function(choice, user)
+            const user = api.getUser();
+            const updatedUser = scoreQuest(choice, user);
+            api.saveUser(updatedUser);
+            loadProfile();
+            
         }
-    };
+    }
 
     //Todo: 
         //score choice/user

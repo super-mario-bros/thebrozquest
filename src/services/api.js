@@ -4,7 +4,7 @@ const api = {
     //use by testing to control where api saves data
     storage: localStorage,
     //methods for reading and saving data
-    signUp(user) {
+    saveUser(user) {
         const json = JSON.stringify(user);
         api.storage.setItem('user', json);
     },
@@ -19,14 +19,12 @@ const api = {
     }, 
     getQuest(id) {
         const quests = api.getQuests();
-        console.log(quests);
         for(let i = 0; i < quests.length; i++) {
             const questId = quests[i].id;
             if(questId === id) {
                 return quests[i];
             }
         }
-        // return findById(questData, id);
     }
 };
 

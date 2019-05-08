@@ -1,4 +1,5 @@
 import api from '../src/services/api.js';
+import scoreQuest from '../src/quest/score-quest.js';
 
 const test = QUnit.test;
 QUnit.module('api');
@@ -27,8 +28,3 @@ test('test to return updated user profile', (assert) => {
     assert.deepEqual(newUser, result);
 });
 
-function scoreQuest(choice, user){
-    user.lives = user.lives + choice.lives;
-    user.coins = choice.coins + user.coins;
-    return user;
-}

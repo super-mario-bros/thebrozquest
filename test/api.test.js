@@ -8,12 +8,12 @@ QUnit.testStart(() => {
     sessionStorage.clear();
 });
 
-test('signUp sets user and returns on getUser', (assert) => {
+test('saveUser sets user and returns on getUser', (assert) => {
     //arrane
     const user = { character: 'mario' };
 
     //act
-    api.signUp(user);
+    api.saveUser(user);
     const result = api.getUser();
     
     //assert
