@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Cloud World</h1>
+        <h1 id="world">Cloud World</h1>
         <div class="profile">
             <img id="avatar">
             Character: <span id="character"></span>
@@ -21,25 +21,13 @@
 
     <main>
         <p>
-            <img id="cloudWorld" src="./assets/cloudworld.jpg" alt="cloud world">
+            <img id="world-image" alt="cloud world">
         </p>
         <p id="description">
             Description here
         </p>
         <form id="choice-form">
-            <fieldset>
-                <label>
-                    <input type="radio" name="choice" value="choice1">
-                    Engage in battle
-                </label>
-                <label>
-                    <input type="radio" name="choice" value="choice2">
-                    Choice 2
-                </label>
-                <label>
-                    <input type="radio" name="choice" value="choice3">
-                    Choice 3
-                </label>
+            <fieldset id="potential-responses">
                 <h3>Pick a choice</h3>
             </fieldset>
             <button>Submit</button>

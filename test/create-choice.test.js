@@ -1,4 +1,4 @@
-import questData from '../src/services/quest-data.js';
+import createChoice from '../src/quest/create-choice.js';
 import api from '../src/services/api.js';
 const test = QUnit.test;
 
@@ -7,21 +7,6 @@ api.storage = sessionStorage;
 QUnit.testStart(() => {
     sessionStorage.clear();
 });
-
-function createChoice(choice){
-    const label = document.createElement('label');
-    const input = document.createElement('input');
-    
-    input.type = 'radio';
-    input.name = 'choice';
-    input.required = true;
-    input.value = choice.id;
-    
-    label.textContent = choice.description;
-    label.appendChild(input);
-    
-    return label;
-}
 
 test('take a quest choice object and return created DOM element for that choice', (assert) => {
     //arrange

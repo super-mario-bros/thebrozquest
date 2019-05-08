@@ -8,12 +8,12 @@ QUnit.testStart(() => {
     sessionStorage.clear();
 });
 
-test('signUp sets user and returns on getUser', (assert) => {
+test('saveUser sets user and returns on getUser', (assert) => {
     //arrane
     const user = { character: 'mario' };
 
     //act
-    api.signUp(user);
+    api.saveUser(user);
     const result = api.getUser();
     
     //assert
@@ -29,4 +29,13 @@ test('returns lists of quests', (assert) => {
     
     //assert
     assert.deepEqual(quests, expected);
+});
+
+test('take in ID and return corresponding quest', (assert) => {
+    //arrange
+    const expectedQuest = questData[1];
+    //act
+    const foundQuest = api.getQuest(expectedQuest.id);
+    //assert
+    assert.deepEqual(foundQuest, expectedQuest);
 });
