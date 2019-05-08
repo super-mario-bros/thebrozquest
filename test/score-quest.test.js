@@ -9,7 +9,8 @@ test('test to return updated user profile', (assert) => {
     //arrange
     const character = { 
         lives: 2,
-        coins: 10
+        coins: 10,
+        completed: {}
     };
 
     const characterChoice = {
@@ -17,11 +18,13 @@ test('test to return updated user profile', (assert) => {
         coins: 5
     }; 
 
+    const quest = { id: '1' };
     //act
-    const newUser = scoreQuest(characterChoice, character);
-    const result = { 
+    const newUser = scoreQuest(characterChoice, character, quest);
+    const result = {  
         lives: 3,
-        coins: 15
+        coins: 15,
+        completed: { '1': true }
     };
 
     //assert

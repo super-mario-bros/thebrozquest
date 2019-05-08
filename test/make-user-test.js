@@ -13,7 +13,8 @@ test('create user object from form data', (assert) => {
         character: 'mario',
         powerUps: 'fire-ball',
         lives: 2,
-        coins: 10
+        coins: 10,
+        completed: {}
     };
     //act
     const user = makeUser(formData);

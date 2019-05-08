@@ -44,16 +44,13 @@ choiceForm.addEventListener('submit', function(event) {
         if(choice.id === choiceId){
             resultDescription.textContent = choice.result;
             const user = api.getUser();
-            const updatedUser = scoreQuest(choice, user);
+            const updatedUser = scoreQuest(choice, user, quest);
             api.saveUser(updatedUser);
             loadProfile();
             
         }
     }
 
-    //Todo: 
-        //score choice/user
-        //save user
 
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
