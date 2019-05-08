@@ -42,6 +42,7 @@ choiceForm.addEventListener('submit', function(event) {
         const choice = quest.choices[i];
         if(choice.id === choiceId){
             resultDescription.textContent = choice.result;
+            console.log(choice);
             // function(choice, user)
         }
     };
