@@ -19,6 +19,7 @@ const api = {
     }, 
     getQuest(id) {
         const quests = api.getQuests();
+        console.log(quests);
         for(let i = 0; i < quests.length; i++) {
             const questId = quests[i].id;
             if(questId === id) {
