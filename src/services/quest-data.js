@@ -2,7 +2,7 @@ const cloudWorld = {
     //quest 1 data
     id: 'cloudWorld',
     title: 'Cloud World',
-    image: 'tunnel.png',
+    image: 'cloudworld.jpg',
     description: `As the name suggests, this level is made up entirely 
         out of clouds. The player must make the right life choices to 
         complete the level with a positive outcome and not die. A tribe of 10 
@@ -35,7 +35,7 @@ const tunnelWorld = {
     //quest 2 data
     id: 'tunnelWorld',
     title: 'Tunnel World',
-    image: 'tunnel.png',
+    image: 'tunnelunderground.png',
     description: `Down the tunnel you go and you find yourself undergrouhnd.The
     enemies are crawling over the ceilings and the ground is plagued with bottomless
     pits. You come across an injured Shy-Guy in the middle of the path. What do you
@@ -71,7 +71,7 @@ const bowsersWorld = {
     //quest 3 data
     id: 'bowsersWorld',
     title: 'Bowsers World',
-    image: 'tunnel.png',
+    image: 'bowsercastle.jpg',
     description: `You made it to Bowser's World. Lava is dripping from the cracks.
     The rocks underneath you are moving. Approaching you is a wall full of
     spikes, glowing red!!!! What will you do???!!!`,
