@@ -7,7 +7,6 @@ import createQuestLink from './create-quest-link.js';
 loadProfile();
 const quests = api.getQuests();
 const user = api.getUser();
-console.log(user);
 const nav = document.getElementById('tunnels');
 
 for(let i = 0; i < quests.length; i++) {
