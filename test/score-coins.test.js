@@ -15,5 +15,3 @@ test('win', function(assert) {
     const score = scoreCoins(user.coins);
     assert.equal(score, 'win');
 });
-
-
