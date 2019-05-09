@@ -12,3 +12,12 @@ test('true', function(assert) {
     assert.equal(dead, true);
 });
 
+test('false', function(assert) {
+    const user = {
+        lives: 1
+    };
+
+    const dead = isDead(user);
+
+    assert.equal(dead, false);
+});
