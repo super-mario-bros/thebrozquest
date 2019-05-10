@@ -30,4 +30,3 @@ test('test to return updated user profile', (assert) => {
     //assert
     assert.deepEqual(newUser, result);
 });
-

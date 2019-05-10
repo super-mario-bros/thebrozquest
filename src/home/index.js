@@ -13,4 +13,3 @@ userSignUp.addEventListener('submit', function(event) {
     window.location = 'map.html';
 
 });
-

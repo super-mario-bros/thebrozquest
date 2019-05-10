@@ -3,8 +3,6 @@ import loadProfile from '../load-profile.js';
 import createQuestLink from './create-quest-link.js';
 import isDead from './is-dead.js';
 import hasCompletedAllQuests from './has-completed-all-quests.js';
-//import scoreQuest from '../quest/score-quest.js';
-
 
 loadProfile();
 const quests = api.getQuests();

@@ -9,9 +9,9 @@ const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 const quest = api.getQuest(questId);
 
-// if(!quest) {
-//     window.location = 'map.html';
-// }
+if(!quest) {
+    window.location = 'map.html';
+}
 
 const world = document.getElementById('world');
 const image = document.getElementById('world-image');
@@ -20,7 +20,6 @@ const choices = document.getElementById('potential-responses');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 const choiceForm = document.getElementById('choice-form');
-
 
 world.textContent = quest.title;
 image.src = '../../assets/' + quest.image;
@@ -46,14 +45,11 @@ choiceForm.addEventListener('submit', function(event) {
             const user = api.getUser();
             const updatedUser = scoreQuest(choice, user, quest);
             api.saveUser(updatedUser);
-            loadProfile();
-            
+            loadProfile();     
         }
     }
 
-
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
-    // resultDescription.textContent = choice.result;
-
+    
 });
