@@ -17,15 +17,15 @@ const api = {
     getQuests() {
         return questData;
     }, 
-    getQuest(id) {
-        const quests = api.getQuests();
-        for(let i = 0; i < quests.length; i++) {
-            const questId = quests[i].id;
-            if(questId === id) {
-                return quests[i];
-            }
-        }
-    }
+    // getQuest(id) {
+    //     const quests = api.getQuests();
+    //     for(let i = 0; i < quests.length; i++) {
+    //         const questId = quests[i].id;
+    //         if(questId === id) {
+    //             return quests[i];
+    //         }
+    //     }
+    // }
 };
 
 export default api;
