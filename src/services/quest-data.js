@@ -36,7 +36,7 @@ const tunnelWorld = {
     id: 'tunnelWorld',
     title: 'Tunnel World',
     image: 'tunnelunderground.png',
-    description: `Down the tunnel you go and you find yourself undergrouhnd.The
+    description: `Down the tunnel you go and you find yourself underground.The
     enemies are crawling over the ceilings and the ground is plagued with bottomless
     pits. You come across an injured Shy-Guy in the middle of the path. What do you
     do?`,
