@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/home/index.css">
     <title>Broz Quest</title>
 </head>
 <body>
-    
+    <header>
+    <h1>Help Rescue Toad</h1>
+    </header>
+    <main>
+        <form id="user-sign-up">
+            <fieldset>
+                <legend>Choose your hero!</legend>
+                <p id="character-choice">
+                    <label>
+                        Mario
+                        <input type="radio" name="character" value="Mario" required>
+                        <img src="assets/mario.png">
+                    </label>
+                    <label>
+                        Luigi
+                        <input type="radio" name="character" value="Luigi" required>
+                        <img src="assets/luigi.png">
+                    </label>
+                    <label>
+                        Princess
+                        <input type="radio" name="character" value="Princess" required>
+                        <img src="assets/princesspeach.png">
+                    </label>
+                    <label>
+                        Yoshi
+                        <input type="radio" name="character" value="Yoshi" required>
+                        <img src="assets/yoshi.png">
+                    </label>
+                </p>
+
+                <label for="power-ups">Power Ups</label>
+                <select name="power-ups" id="power-ups">
+                    <option value="" hidden disabled selected>Select your power up!</option>
+                    <option value="fire-ball">Fire Balls</option>
+                    <option value="p-wings">P-Wings</option>
+                    <option value="super-star">Super Star</option>
+                </select>
+            </fieldset>
+            <button>Start Your Adventure!</button>
+        </form>
+    </main>       
+    <script type="module" src="./src/home/index.js"></script>
 </body>
 </html>

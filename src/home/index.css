@@ -1,0 +1,21 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    background-image: url('../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: 100%100vh 
+}
+header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+fieldset {
+    border: 6px solid  yellow; 
+    padding: 20px;
+    margin-left: 40px;
+}
+button {
+    margin-top: 20px;
+    margin-left: 40px;
+}
