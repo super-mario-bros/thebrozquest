@@ -31,7 +31,7 @@ test('returns lists of quests', (assert) => {
     assert.deepEqual(quests, expected);
 });
 
-test('take in ID and return corresponding quest', (assert) => {
+test('take in id and return corresponding quest', (assert) => {
     //arrange
     const expectedQuest = questData[1];
     //act
